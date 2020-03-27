@@ -706,17 +706,22 @@ section .location {
     background: transparent;
   }
   .section {
-    margin: 0.8rem 0;
     padding: 0;
   }
   .section header {
-    padding-bottom: 0.15rem;
+    padding: 0;
   }
   .section .location {
-    padding-bottom: 0.15rem;
+    padding-bottom: 0.05rem;
+  }
+  .section .skills {
+    margin: 0;
   }
   .section > section > section {
-    margin: 0 0 1em 0;
+    margin: 0 0 .35em 0;
+  }
+  .section {
+    margin-bottom: .05rem;
   }
   .section > section > section:last-of-type {
     margin: 0;
@@ -728,7 +733,7 @@ section .location {
     color: #828386;
   }
   ul {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
   }
   ul,
   li {
@@ -743,7 +748,7 @@ section .location {
   }
   ul.keywords li::after,
   ul.courses li::after {
-    padding: 0 0 0 0.1rem;
+    padding: 0 0 0 0rem;
     content: " |";
   }
   ul.keywords::before,
@@ -756,7 +761,7 @@ section .location {
     padding: 0;
   }
   .highlights {
-    margin: 0.5em 0 0 0;
+    margin: 0.25em 0 0 0;
   }
   ul.keywords::before {
     content: "Skills acquired: ";
@@ -800,7 +805,7 @@ section .location {
   <body>
   
   <div id="resume">
-    	<header id="header" class="clear">
+    	<header style="text-align: center;" id="header" class="clear">
     		<div>
     			<h1 class="name">Christine (WooJung) Choo</h1>
     			<h2 class="label"></h2>
@@ -824,8 +829,6 @@ section .location {
     				<span class="fas fa-mobile-alt"></span>
     				<a href="tel:(714) 588-3390">(714) 588-3390</a>
     			</div>
-    		</div>
-    
     		<div id="profiles">
     			<div class="item">
     				<div class="username">
@@ -836,76 +839,113 @@ section .location {
     				</div>
     			</div>
     		</div>
+    		</div>
+    
+    		
     	</header>
     
     
     <section class="section">
     	<header>
-    		<h2 class='section-title'>Work Experience</h2>
+    		<h2 class='section-title'>Skills</h2>
     	</header>
+    	<section id="skills">
+    		<div class="item">
+     			<ul class="keywords">
+    				<li>Salesforce (CRM) Administrator Training Completion</li>
+    				<li>Mailchimp Marketing Automation</li>
+    				<li>Squarespace Website Design</li>
+    				<li>Google Analytics</li>
+    				<li>Social Media Performance</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience</h2>
+      </header>
     
-    	<section id="work">
-    		<section class="work-item">
-    
-    
+      <section id="work">
+        <section class="work-item">
     
     
     			<header class="clear">
-    				<div>Kalibri Labs</div>
+    				<div class="position">Senior Associate, Client Engagement</div>
+    				<div class="company">Kalibri Labs</div>
+    				<div class="date">
+    				  <span class="startDate">Aug 2019</span>
+    					<span class="endDate">- Mar 2020</span>
+    				</div>
     			</header>
+    
     			<span class="location">
     				<span class="fas fa-map-marker-alt"></span>
     				<span class="city">Rockville,</span>
     				<span class="region">MD</span>
     			</span>
+         	<div class="item" id="work-item">
+            <ul class="highlights">
+                <li><p>Produced monthly, quarterly, and ad-hoc Excel-based deliverables for all enterprise and investment clients</p></li>
+                <li><p>Internally analyzed client deliverables before final delivery, improving the quality assurance and validation process</p></li>
+                <li><p>Educated clients on the importance of Kalibri Labs’ unique metrics to help them uncover accurate insights and improve profits</p></li>
+                <li><p>Alpha tested new products and versions of existing products for quality assurance, design standards, and bugs</p></li>
+                <li><p>Executed a monthly industry newsletter campaign resulting in multiple recurring pick-ups from major trade organizations, which included the newsletter design as well as delivery through MailChimp, Squarespace, LinkedIn, and Twitter</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
     
     			<header class="clear">
-    
-    				<div class="position">Senior Associate, Client Engagement</div>
-    				<div class="date">
-    					<span class="startDate">Aug 2019</span>
-    					<span class="endDate">- Mar 2020</span>
-    				</div>
-    				<div id="work-item">
-    				<ul class="highlights">
-    					<li><p>Produced monthly, quarterly, and ad-hoc Excel-based deliverables for all enterprise and investment clients</p></li>
-    					<li><p>Internally analyzed client deliverables before final delivery, improving the quality assurance and validation process</p></li>
-    					<li><p>Educated clients on the importance of Kalibri Labs’ unique metrics to help them uncover accurate insights and improve profits</p></li>
-    					<li><p>Alpha tested new products and versions of existing products for quality assurance, design standards, and bugs</p></li>
-    					<li><p>Executed a monthly industry newsletter campaign resulting in multiple recurring pick-ups from major trade organizations, which included the newsletter design as well as delivery through MailChimp, Squarespace, LinkedIn, and Twitter</p></li>
-    				</ul>
-    			</div>
     				<div class="position">Associate, Sales &amp; Marketing</div>
+    				<div class="company">Kalibri Labs</div>
     				<div class="date">
-    					<span class="startDate">Nov 2018</span>
+    				  <span class="startDate">Nov 2018</span>
     					<span class="endDate">- Aug 2019</span>
     				</div>
-    				<div id="work-item">
-    				<ul class="highlights">
-    					<li><p>Project-managed Salesforce-related projects - Autofy integration, and Cases, Pricebook & Product object enhancements</p></li>
-    					<li><p>Managed all social accounts, grew company’s followers by 85%, and doubled website traffic without paid advertising</p></li>
-    					<li><p>Executed targeted email campaigns for product launch/enhancement, monthly newsletter, industry outreach, & event follow-up</p></li>
-    					<li><p>Developed brand templates in Word, PowerPoint, and Excel for both internal and external use, including sales pitch & data decks</p></li>
-    				</ul>
-    			</div>
-    				<div class="position">Analyst, Marketing</div>
-    				<div class="date">
-    					<span class="startDate">Feb 2017</span>
-    					<span class="endDate">- Nov 2018</span>
-    				</div>
-    				<div id="work-item">
-    				<ul class="highlights">
-    					<li><p>Segmented the marketing database of 6,000+ contacts by product line and client type, allowing for more targeted campaigns</p></li>
-    					<li><p>Enhanced company website by launching online store page, creating more product-specific pages, gating select contents with lead-generating forms</p></li>
-    					<li><p>Developed training materials for the company’s core concept of Hotel Revenue Strategy, a new discipline for the digital age</p></li>
-    				</ul>
-    			</div>
     			</header>
     
-    			
-     			
-    		</section>
-    	</section>
+    			<span class="location">
+    				<span class="fas fa-map-marker-alt"></span>
+    				<span class="city">Rockville,</span>
+    				<span class="region">MD</span>
+    			</span>
+         	<div class="item" id="work-item">
+            <ul class="highlights">
+                <li><p>Project-managed Salesforce-related projects - Autofy integration, and Cases, Pricebook & Product object enhancements</p></li>
+                <li><p>Managed all social accounts, grew company’s followers by 85%, and doubled website traffic without paid advertising</p></li>
+                <li><p>Executed targeted email campaigns for product launch/enhancement, monthly newsletter, industry outreach, & event follow-up</p></li>
+                <li><p>Developed brand templates in Word, PowerPoint, and Excel for both internal and external use, including sales pitch & data decks</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+    
+    			<header class="clear">
+    				<div class="position">Analyst, Marketing</div>
+    				<div class="company">Kalibri Labs</div>
+    				<div class="date">
+    				  <span class="startDate">Feb 2017</span>
+    					<span class="endDate">- Nov 2018</span>
+    				</div>
+    			</header>
+    
+    			<span class="location">
+    				<span class="fas fa-map-marker-alt"></span>
+    				<span class="city">Rockville,</span>
+    				<span class="region">MD</span>
+    			</span>
+         	<div class="item" id="work-item">
+            <ul class="highlights">
+                <li><p>Segmented the marketing database of 6,000+ contacts by product line and client type, allowing for more targeted campaigns</p></li>
+                <li><p>Enhanced company website by launching online store page, creating more product-specific pages, gating select contents with lead-generating forms</p></li>
+                <li><p>Developed training materials for the company’s core concept of Hotel Revenue Strategy, a new discipline for the digital age</p></li>
+            </ul>
+        	</div>
+        </section>
+      </section>
     </section>
     <section class="section">
       <header>
@@ -1003,7 +1043,7 @@ section .location {
           <header class="clear">
             <div class="header-left">
               <div class="studyType">
-                Intended Bachelor of Science
+                Intended Bachelor of Science,
               </div>
               <div class="area">
                 Hospitality Management
@@ -1081,21 +1121,6 @@ section .location {
           </div>
         </section>
       </section>
-    </section>
-    <section class="section">
-    	<header>
-    		<h2 class='section-title'>Skills</h2>
-    	</header>
-    	<section id="skills">
-    		<div class="item">
-     			<ul class="keywords">
-    				<li>Salesforce (CRM) Administrator Training Completion</li>
-    				<li>Looker (Business Intelligence) Reporting</li>
-    				<li>Mailchimp Marketing Automation</li>
-    				<li>Bilingual in English and Korean</li>
-    			</ul>
-    		</div>
-    	</section>
     </section>
 
   </body>
